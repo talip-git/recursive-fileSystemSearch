@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Oswald", sans-serif;
+  overflow: hidden;
+  color: white;
+  background-image: linear-gradient(to right, rgb(82, 156, 253), rgb(168, 92, 255));
+  width: 100%;
+  height: 100vh;
+}
+
+hr {
+  color: white;
+  border-bottom: 40px;
+  border-color: white;
+}
+
+.heading {
+  text-align: center;
+}
+.heading h1 {
+  text-align: center;
+  margin: 1rem;
+}
+.heading p {
+  text-align: center;
+  padding: 2rem;
+}
+.heading p span {
+  font-size: larger;
+  font-weight: bold;
+}
+
+.search {
+  width: 100%;
+  color: white;
+}
+.search h3 {
+  text-align: center;
+  padding: 1rem;
+}
+.search .searchInput {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.search .searchInput label {
+  padding: 0.5rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  color: black;
+  transition: 0.4s;
+  transition-timing-function: ease-in;
+  width: 10%;
+  text-align: center;
+  cursor: pointer;
+}
+.search .searchInput label:hover {
+  background-color: rgb(210, 233, 255);
+}
+.search .searchInput label input {
+  display: none;
+}
+.search .searchInput label abbr {
+  text-decoration: none;
+}
+.search .searchInput select {
+  padding: 0.7rem;
+  border: none;
+  border-radius: 0.5rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  width: 10%;
+}
+.search .searchInput select option {
+  padding: 1rem;
+  border: none;
+  text-align: center;
+}
+.search .searchInput_button {
+  padding: 0.7rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: 0.4s;
+  transition-timing-function: ease;
+}
+.search .searchInput_button:hover {
+  background-color: rgb(210, 233, 255);
+}
+
+.resultContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.resultContainer .result {
+  background-color: white;
+  width: 50%;
+  padding: 1rem;
+  height: 30vh;
+  margin: 3rem;
+  border-radius: 1rem;
+  overflow-y: scroll;
+}
+
+/*# sourceMappingURL=index.css.map */

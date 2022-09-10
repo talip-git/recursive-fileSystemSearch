@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="heading">
+        <h1>Welcome ! </h1>
+        <div>
+            <h3>Welcome to the File Searcher.</h3>
+            <p>
+                This is an open source http based file searcher written with Node.js.<br>
+                In order to for the search to be sucessfull the process should be started on the host device.<br>
+                We are treating host device as a server and returning the file stats in that server.<br>
+                <span>Use locally, do not open this to public!</span>
+            </p>
+        </div>
+    </div>
+    <hr>
+    <div class="search">
+        <h3>Search My Files</h3>
+        <div class="searchInput">
+            <label for="filePath">
+                <abbr title="Default is the root directory">
+                    Choose a File Path For Search
+                </abbr>
+                <input type="file" id="filePath" webkitdirectory directory multiple>
+            </label>
+            <select name="selectSize" id="selectSize">
+                <option value="Default is 0">File >= 0</option>
+                <option value="Bigger Than & Equals > 1GB">File >= 1GB</option>
+                <option value="Bigger Than & Equals > 5GB">File >= 5GB</option>
+            </select>
+            <button class="searchInput_button">Search</button>
+        </div>
+    </div>
+    <div class="resultContainer">
+        <div class="result">
+
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
